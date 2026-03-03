@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LITS — Officers A.Y. 2024–2025</title>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="shared.css">
+<link rel="stylesheet" href="officers.css">
+</head>
+<body>
+
+<nav class="site-nav">
+  <a href="index.html" class="nav-brand">
+    <img src="profile/LITS_LOGO.png" alt="LITS Logo">
+    <div class="nav-brand-text"><span class="abbr">LITS</span><span class="full">LEAGUE OF INFORMATION TECHNOLOGY STUDENTS</span></div>
+  </a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html">HOME</a></li>
+    <li><a href="events.html">EVENTS</a></li>
+    <li><a href="history.html">HISTORY</a></li>
+    <li><a href="officers.html" class="active">OFFICERS</a></li>
+    <li><a href="partners.html">PARTNERS</a></li>
+    <li><a href="contacts.html">CONTACTS</a></li>
+    <li><a href="about.html">ABOUT</a></li>
+    <li><a href="developers.html">DEVS</a></li>
+  </ul>
+  <button class="nav-hamburger" id="navToggle"><span></span><span></span><span></span></button>
+</nav>
+
+<div class="page-hero">
+  <div class="page-hero-inner">
+    <div class="breadcrumb"><a href="index.html">HOME</a> &rsaquo; OFFICERS</div>
+    <h1 class="page-title">Meet the <span>Team</span></h1>
+    <p class="page-subtitle">A.Y. 2024&ndash;2025 &mdash; ADVISERS, EXECUTIVE BOARD &amp; COMMITTEES</p>
+  </div>
+</div>
+
+<div class="section">
+
+  <div class="eyebrow reveal">// FACULTY ADVISERS</div>
+  <h2 class="section-heading reveal">Faculty <span>Advisers</span></h2>
+
+  <div class="advisers-grid reveal">
+
+    <div class="adv-full-card">
+      <div class="adv-full-inner">
+        <div class="adv-full-avatar" onclick="openPhoto('profile/FROI.jpg','Dr. Froilan De Guzman — Senior Adviser, LITS')">
+          <img src="profile/FROI.jpg" alt="Dr. Froilan De Guzman" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="adv-av-ph" style="display:none">👨‍🏫<small>DR. DE GUZMAN</small></div>
+          <div class="adv-av-overlay"><span>VIEW PHOTO</span></div>
+        </div>
+        <div class="adv-full-meta">
+          <span class="adv-full-badge">// SENIOR ADVISER &mdash; SINCE 2004 &mdash; NEARLY 20 YEARS</span>
+          <h2 class="adv-full-name">Dr. Froilan De Guzman</h2>
+          <p class="adv-full-role">DEPARTMENT HEAD OF COMPUTER STUDIES &middot; BSIT DEPARTMENT &middot; LITS SENIOR ADVISER</p>
+          <div class="adv-full-desc">
+            <p><strong>Dr. Froilan De Guzman</strong> has been the guiding force of the League of Information Technology Students since its founding in 2004 — nearly two decades of unwavering commitment to student growth, organizational culture, and the IT community at UE Caloocan. He is the <strong>longest-serving adviser in LITS history</strong>, present across countless generations of officers and hundreds of student lives.</p>
+          </div>
+          <button class="read-more" onclick="openModal('m-sadv')">READ FULL PROFILE &rarr;</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="adv-full-card adv-secondary">
+      <div class="adv-full-inner">
+        <div class="adv-full-avatar adv-avatar-sm" onclick="openPhoto('profile/CELIS.jpeg','Prof. Ryan Celis — Junior Adviser, LITS')">
+          <img src="profile/CELIS.jpeg" alt="Prof. Ryan Celis" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="adv-av-ph" style="display:none">👨‍💻<small>PROF. CELIS</small></div>
+          <div class="adv-av-overlay"><span>VIEW PHOTO</span></div>
+        </div>
+        <div class="adv-full-meta">
+          <span class="adv-full-badge">// JUNIOR ADVISER &mdash; BSIT DEPARTMENT</span>
+          <h2 class="adv-full-name adv-name-sm">Prof. Ryan Celis</h2>
+          <p class="adv-full-role">INSTRUCTOR I &middot; BSIT DEPARTMENT &middot; LITS JUNIOR ADVISER</p>
+          <div class="adv-full-desc">
+            <p><strong>Prof. Ryan Celis</strong> is that rare kind of professor who never gets tired of teaching — someone who breaks down the most complex IT concepts into their simplest forms, making learning not just manageable but genuinely enjoyable. His patience is something students truly appreciate and remember.</p>
+          </div>
+          <button class="read-more" onclick="openModal('m-jadv')">READ FULL PROFILE &rarr;</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="eyebrow reveal">// ORGANIZATIONAL CHART &mdash; A.Y. 2024&ndash;2025</div>
+  <h2 class="section-heading reveal"><span>EXECUTIVE</span> Officers</h2>
+
+  <div class="org-tree reveal">
+
+    <div class="tree-layer" id="l1">
+      <div style="display:flex;flex-direction:column;align-items:center;">
+        <div class="o-card pres">
+          <div class="o-avatar"><img src="profile/nicole2.png" alt="Nicole David" onerror="this.style.display='none'"></div>
+          <div class="o-body">
+            <span class="o-pos">PRESIDENT</span>
+            <div class="o-name">Nicole David</div>
+            <div class="o-year">BSIT &mdash; 4th Year</div>
+          </div>
+          <button class="o-read" onclick="openModal('m-pres')">READ MORE</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="v-connector"><div class="vl"></div><div class="hdot"></div><div class="vl"></div></div>
+
+    <div class="tree-layer" id="l2">
+      <div style="display:flex;flex-direction:column;align-items:center;">
+        <div class="o-card" onclick="openPhoto('profile/ZHYMEE.jpg','Zhymee Bacacao — VP Internal')">
+          <div class="o-avatar">
+            <img src="profile/ZHYMEE.jpg" alt="Zhymee Bacacao" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="o-emoji-ph" style="display:none">🧑‍💼</div>
+            <div class="o-av-overlay"><span>VIEW</span></div>
+          </div>
+          <div class="o-body">
+            <span class="o-pos">VP &mdash; INTERNAL</span>
+            <div class="o-name">Zhymee Bacacao</div>
+            <div class="o-year">BSIT &mdash; 3rd Year</div>
+          </div>
+          <button class="o-read" onclick="event.stopPropagation();openModal('m-vpi')">READ MORE</button>
+        </div>
+      </div>
+      <div style="display:flex;flex-direction:column;align-items:center;">
+        <div class="o-card" onclick="openPhoto('profile/charlize.jpg','Charlize Fe — VP External')">
+          <div class="o-avatar">
+            <img src="profile/charlize.jpg" alt="Charlize Fe" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="o-emoji-ph" style="display:none">👩‍💼</div>
+            <div class="o-av-overlay"><span>VIEW</span></div>
+          </div>
+          <div class="o-body">
+            <span class="o-pos">VP &mdash; EXTERNAL</span>
+            <div class="o-name">Charlize Fe</div>
+            <div class="o-year">BSIT &mdash; 4th Year</div>
+          </div>
+          <button class="o-read" onclick="event.stopPropagation();openModal('m-vpe')">READ MORE</button>
+        </div>
+      </div>
+      <div style="display:flex;flex-direction:column;align-items:center;">
+        <div class="o-card" onclick="openPhoto('profile/KARL.JPG','Karl Louie Laquian — Secretary')">
+          <div class="o-avatar">
+            <img src="profile/KARL.JPG" alt="Karl Louie Laquian" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="o-emoji-ph" style="display:none">📋</div>
+            <div class="o-av-overlay"><span>VIEW</span></div>
+          </div>
+          <div class="o-body">
+            <span class="o-pos">SECRETARY</span>
+            <div class="o-name">Karl Louie Laquian</div>
+            <div class="o-year">BSIT &mdash; 2nd Year</div>
+          </div>
+          <button class="o-read" onclick="event.stopPropagation();openModal('m-sec')">READ MORE</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="v-connector"><div class="vl"></div><div class="hdot"></div><div class="vl"></div></div>
+
+    <div class="tree-layer" id="l3">
+      <div style="display:flex;flex-direction:column;align-items:center;">
+        <div class="o-card" onclick="openPhoto('profile/sean2.jpg','Sean Michael Cayabyab — Treasurer')">
+          <div class="o-avatar">
+            <img src="profile/sean2.jpg" alt="Sean Michael Cayabyab" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="o-emoji-ph" style="display:none">💰</div>
+            <div class="o-av-overlay"><span>VIEW</span></div>
+          </div>
+          <div class="o-body">
+            <span class="o-pos">TREASURER</span>
+            <div class="o-name">Sean Michael Cayabyab</div>
+            <div class="o-year">BSIT &mdash; 3rd Year</div>
+          </div>
+          <button class="o-read" onclick="event.stopPropagation();openModal('m-tres')">READ MORE</button>
+        </div>
+      </div>
+      <div style="display:flex;flex-direction:column;align-items:center;">
+        <div class="o-card" onclick="openPhoto('profile/pat.png','Patrick Cyrl Ramos — OIC Auditor')">
+          <div class="o-avatar">
+            <img src="profile/pat.png" alt="Patrick Cyrl Ramos" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="o-emoji-ph" style="display:none">🔍</div>
+            <div class="o-av-overlay"><span>VIEW</span></div>
+          </div>
+          <div class="o-body">
+            <span class="o-pos">OIC AUDITOR</span>
+            <div class="o-name">Patrick Cyrl Ramos</div>
+            <div class="o-year">BSIT &mdash; 1st Year</div>
+          </div>
+          <button class="o-read" onclick="event.stopPropagation();openModal('m-aud')">READ MORE</button>
+        </div>
+      </div>
+      <div style="display:flex;flex-direction:column;align-items:center;">
+        <div class="o-card" onclick="openPhoto('profile/dendale.jpg','Dendale Mendoza — PRO')">
+          <div class="o-avatar">
+            <img src="profile/dendale.jpg" alt="Dendale Mendoza" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="o-emoji-ph" style="display:none">📣</div>
+            <div class="o-av-overlay"><span>VIEW</span></div>
+          </div>
+          <div class="o-body">
+            <span class="o-pos">PUBLIC RELATIONS OFFICER</span>
+            <div class="o-name">Dendale Mendoza</div>
+            <div class="o-year">BSIT &mdash; 4th Year</div>
+          </div>
+          <button class="o-read" onclick="event.stopPropagation();openModal('m-pro')">READ MORE</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="v-connector"><div class="vl"></div><div class="hdot"></div><div class="vl"></div></div>
+
+    <div class="tree-layer" id="l4">
+      <div class="o-card" onclick="openPhoto('profile/franco.png','Francois Ross Franco — Business Manager')">
+        <div class="o-avatar">
+          <img src="profile/franco.jpg" alt="Francois Ross Franco" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="o-emoji-ph" style="display:none">📊</div>
+          <div class="o-av-overlay"><span>VIEW</span></div>
+        </div>
+        <div class="o-body">
+          <span class="o-pos">BUSINESS MANAGER</span>
+          <div class="o-name">Francois Ross Franco</div>
+          <div class="o-year">BSIT &mdash; 4th Year</div>
+        </div>
+        <button class="o-read" onclick="event.stopPropagation();openModal('m-bm')">READ MORE</button>
+      </div>
+      <div class="o-card" onclick="openPhoto('profile/ziah.JPG','Ziah Mayoralgo — 4th Year Rep')">
+        <div class="o-avatar">
+          <img src="profile/ziah.JPG" alt="Ziah Mayoralgo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="o-emoji-ph" style="display:none">🎓</div>
+          <div class="o-av-overlay"><span>VIEW</span></div>
+        </div>
+        <div class="o-body">
+          <span class="o-pos">4TH YEAR REP</span>
+          <div class="o-name">Ziah Mayoralgo</div>
+          <div class="o-year">BSIT &mdash; 4th Year</div>
+        </div>
+        <button class="o-read" onclick="event.stopPropagation();openModal('m-4yr')">READ MORE</button>
+      </div>
+      <div class="o-card" onclick="openPhoto('profile/princes.jpg','Princes Joy Dela Cruz — 2nd Year Rep')">
+        <div class="o-avatar">
+          <img src="profile/princes.png" alt="Princes Joy Dela Cruz" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="o-emoji-ph" style="display:none">✌️</div>
+          <div class="o-av-overlay"><span>VIEW</span></div>
+        </div>
+        <div class="o-body">
+          <span class="o-pos">2ND YEAR REP</span>
+          <div class="o-name">Princes Joy Dela Cruz</div>
+          <div class="o-year">BSIT &mdash; 2nd Year</div>
+        </div>
+        <button class="o-read" onclick="event.stopPropagation();openModal('m-2yr')">READ MORE</button>
+      </div>
+      <div class="o-card" onclick="openPhoto('profile/mae.jpg','Maebelle Saniano — 1st Year Rep')">
+        <div class="o-avatar">
+          <img src="profile/mae.jpg" alt="Maebelle Saniano" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="o-emoji-ph" style="display:none">🌱</div>
+          <div class="o-av-overlay"><span>VIEW</span></div>
+        </div>
+        <div class="o-body">
+          <span class="o-pos">1ST YEAR REP</span>
+          <div class="o-name">Maebelle Saniano</div>
+          <div class="o-year">BSIT &mdash; 1st Year</div>
+        </div>
+        <button class="o-read" onclick="event.stopPropagation();openModal('m-1yr')">READ MORE</button>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="eyebrow reveal" style="margin-top:3rem;">// COMMITTEE OFFICERS</div>
+  <h2 class="section-heading reveal">Committee <span>Members</span></h2>
+  <p class="reveal" style="color:var(--w55);font-size:.95rem;margin-bottom:2.5rem;">Click any photo to view full image.</p>
+
+  <div class="comm-block reveal">
+    <div class="comm-header"><div class="comm-tag">// 01</div><div class="comm-title">Executive Committee</div><div class="comm-line"></div></div>
+    <div class="comm-grid">
+      <div class="cm-card" onclick="openPhoto('profile/rezeel.png','Joanna Reezel E. Vecida')">
+        <div class="cm-photo"><img src="profile/rezeel.png" alt="Joanna Reezel E. Vecida" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><div class="cm-emoji-ph" style="display:none">👩‍💻</div><div class="cm-overlay"><span>VIEW</span></div></div>
+        <div class="cm-info"><div class="cm-name">Joanna Reezel E. Vecida</div><div class="cm-yr">BSIT</div></div>
+      </div>
+      <div class="cm-card" onclick="openPhoto('profile/rocel.png','Joanna Rocel E. Vecida')">
+        <div class="cm-photo"><img src="profile/rocel.png" alt="Joanna Rocel E. Vecida" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><div class="cm-emoji-ph" style="display:none">👩‍💻</div><div class="cm-overlay"><span>VIEW</span></div></div>
+        <div class="cm-info"><div class="cm-name">Joanna Rocel E. Vecida</div><div class="cm-yr">BSIT</div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="comm-block reveal">
+    <div class="comm-header"><div class="comm-tag">// 02</div><div class="comm-title">Communication Committee</div><div class="comm-line"></div></div>
+    <div class="comm-grid">
+      <div class="cm-card" onclick="openPhoto('profile/elaiza.png','Elaiza Jade R. Bernardino')">
+        <div class="cm-photo"><img src="profile/elaiza.png" alt="Elaiza Jade R. Bernardino" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><div class="cm-emoji-ph" style="display:none">📢</div><div class="cm-overlay"><span>VIEW</span></div></div>
+        <div class="cm-info"><div class="cm-name">Elaiza Jade R. Bernardino</div><div class="cm-yr">BSIT</div></div>
+      </div>
+      <div class="cm-card" onclick="openPhoto('profile/roms.png','Rommel M. Bueno')">
+        <div class="cm-photo"><img src="profile/roms.png" alt="Rommel M. Bueno" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><div class="cm-emoji-ph" style="display:none">📢</div><div class="cm-overlay"><span>VIEW</span></div></div>
+        <div class="cm-info"><div class="cm-name">Rommel M. Bueno</div><div class="cm-yr">BSIT</div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="comm-block reveal">
+    <div class="comm-header"><div class="comm-tag">// 03</div><div class="comm-title">Creatives Committee</div><div class="comm-line"></div></div>
+    <div class="comm-grid">
+      <div class="cm-card" onclick="openPhoto('profile/marille.png','Marille Reigne M. Cruz')">
+        <div class="cm-photo"><img src="profile/marille.png" alt="Marille Reigne M. Cruz" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><div class="cm-emoji-ph" style="display:none">🎨</div><div class="cm-overlay"><span>VIEW</span></div></div>
+        <div class="cm-info"><div class="cm-name">Marille Reigne M. Cruz</div><div class="cm-yr">BSIT</div></div>
+      </div>
+      <div class="cm-card" onclick="openPhoto('profile/bless.png','Bless Jhiniel V. Selda')">
+        <div class="cm-photo"><img src="profile/bless.png" alt="Bless Jhiniel V. Selda" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><div class="cm-emoji-ph" style="display:none">🎨</div><div class="cm-overlay"><span>VIEW</span></div></div>
+        <div class="cm-info"><div class="cm-name">Bless Jhiniel V. Selda</div><div class="cm-yr">BSIT</div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="comm-block reveal">
+    <div class="comm-header"><div class="comm-tag">// 04</div><div class="comm-title">Multimedia Committee</div><div class="comm-line"></div></div>
+    <div class="comm-grid">
+      <div class="cm-card" onclick="openPhoto('profile/kiel.png','Kiel Angelo O. Monterey')">
+        <div class="cm-photo"><img src="profile/kiel.png" alt="Kiel Angelo O. Monterey" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><div class="cm-emoji-ph" style="display:none">🎬</div><div class="cm-overlay"><span>VIEW</span></div></div>
+        <div class="cm-info"><div class="cm-name">Kiel Angelo O. Monterey</div><div class="cm-yr">BSIT</div></div>
+      </div>
+      <div class="cm-card" onclick="openPhoto('profile/mary.png','Mary Jasmine M. Nunag')">
+        <div class="cm-photo"><img src="profile/mary.png" alt="Mary Jasmine M. Nunag" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><div class="cm-emoji-ph" style="display:none">🎬</div><div class="cm-overlay"><span>VIEW</span></div></div>
+        <div class="cm-info"><div class="cm-name">Mary Jasmine M. Nunag</div><div class="cm-yr">BSIT</div></div>
+      </div>
+      <div class="cm-card" onclick="openPhoto('profile/moyo.PNG','Angela M. Icuspit')">
+        <div class="cm-photo"><img src="profile/moyo.PNG" alt="Angela M. Icuspit" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><div class="cm-emoji-ph" style="display:none">🎬</div><div class="cm-overlay"><span>VIEW</span></div></div>
+        <div class="cm-info"><div class="cm-name">Angela M. Icuspit</div><div class="cm-yr">BSIT</div></div>
+      </div>
+      <div class="cm-card" onclick="openPhoto('profile/nardo.png','Joseph Troy A. Nardo')">
+        <div class="cm-photo"><img src="profile/nardo.png" alt="Joseph Troy A. Nardo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><div class="cm-emoji-ph" style="display:none">🎬</div><div class="cm-overlay"><span>VIEW</span></div></div>
+        <div class="cm-info"><div class="cm-name">Joseph Troy A. Nardo</div><div class="cm-yr">BSIT</div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="comm-block reveal">
+    <div class="comm-header"><div class="comm-tag">// 05</div><div class="comm-title">Technical Committee</div><div class="comm-line"></div></div>
+    <div class="comm-grid">
+      <div class="cm-card" onclick="openPhoto('profile/samir.png','Samir Duran R. Sindol')">
+        <div class="cm-photo"><img src="profile/samir.png" alt="Samir Duran R. Sindol" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><div class="cm-emoji-ph" style="display:none">⚙️</div><div class="cm-overlay"><span>VIEW</span></div></div>
+        <div class="cm-info"><div class="cm-name">Samir Duran R. Sindol</div><div class="cm-yr">BSIT</div></div>
+      </div>
+      <div class="cm-card" onclick="openPhoto('profile/yrej.png','Yrej Jhel C. Talawec')">
+        <div class="cm-photo"><img src="profile/yrej.png" alt="Yrej Jhel C. Talawec" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><div class="cm-emoji-ph" style="display:none">⚙️</div><div class="cm-overlay"><span>VIEW</span></div></div>
+        <div class="cm-info"><div class="cm-name">Yrej Jhel C. Talawec</div><div class="cm-yr">BSIT</div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="comm-block reveal">
+    <div class="comm-header"><div class="comm-tag">// 06</div><div class="comm-title">Outreach Committee</div><div class="comm-line"></div></div>
+    <div class="comm-grid">
+      <div class="cm-card" onclick="openPhoto('profile/tio.png','John Vencent Tio')">
+        <div class="cm-photo"><img src="profile/tio.png" alt="John Vencent Tio" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><div class="cm-emoji-ph" style="display:none">🌱</div><div class="cm-overlay"><span>VIEW</span></div></div>
+        <div class="cm-info"><div class="cm-name">John Vencent Tio</div><div class="cm-yr">BSIT</div></div>
+      </div>
+    </div>
+  </div>
+
+</div><!-- end section -->
+
+<!-- PHOTO LIGHTBOX -->
+<div class="photo-lightbox" id="photoLightbox" onclick="closeLightbox()">
+  <div class="photo-lightbox-inner" onclick="event.stopPropagation()">
+    <button class="photo-close" onclick="closeLightbox()">&#x2715; CLOSE</button>
+    <img id="lightboxImg" src="" alt="">
+    <div class="lightbox-name" id="lightboxName"></div>
+  </div>
+</div>
+
+<!-- ══ ADVISER MODALS — UNTOUCHED ══ -->
+
+<div class="modal-overlay" id="m-sadv" onclick="closeModalOutside(event,'m-sadv')">
+  <div class="modal-box">
+    <button class="modal-close-btn" onclick="closeModal('m-sadv')">&#x2715; CLOSE</button>
+    <div class="modal-inner">
+      <div class="modal-img-wrap">
+        <img src="profile/FROI.jpg" alt="Dr. Froilan De Guzman" onerror="this.style.display='none'"
+             onclick="openPhoto('profile/FROI.jpg','Dr. Froilan De Guzman — Senior Adviser, LITS')">
+      </div>
+      <span class="modal-tag">// SENIOR ADVISER &mdash; LITS, SINCE 2004</span>
+      <div class="modal-name">Dr. Froilan De Guzman</div>
+      <div class="modal-sub">DEPARTMENT HEAD OF COMPUTER STUDIES &middot; NEARLY 20 YEARS OF SERVICE</div>
+      <hr class="modal-hr">
+      <div class="modal-content">
+        <h3>Nearly Two Decades at the Helm</h3>
+        <p>Dr. Froilan De Guzman has served as LITS Faculty Adviser since the organization's founding in 2004 — making him the longest-serving adviser in LITS history. His commitment to IT students has never wavered across nearly 20 years and countless generations of officer changes.</p>
+        <h3>The Teacher Behind the Title</h3>
+        <p>He is a truly admirable instructor who possesses not just great knowledge, but the wits to go with it — and the perfect amount of humor that makes every class feel like a privilege. His lessons are like a gift wrapped in gold — ones his students carry long after they graduate.</p>
+        <h3>Surviving Dissolution</h3>
+        <p>LITS was dissolved at one point during its early years, and Dr. De Guzman was initially reluctant to continue as adviser. But a persistent group of lower-year students convinced him that the organization was worth reviving. He returned — and from that revival forward, LITS never stopped growing.</p>
+        <h3>A Legacy of People</h3>
+        <p>He has <strong>shaped not only LITS, but the lives of countless IT students</strong> at UE Caloocan. As LITS adviser, he has always wanted only what is best for the organization — and as a mentor, only what is best for every student. He is, simply, a one-of-a-kind person inside and outside the classroom.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal-overlay" id="m-jadv" onclick="closeModalOutside(event,'m-jadv')">
+  <div class="modal-box">
+    <button class="modal-close-btn" onclick="closeModal('m-jadv')">&#x2715; CLOSE</button>
+    <div class="modal-inner">
+      <div class="modal-img-wrap">
+        <img src="profile/CELIS.jpeg" alt="Prof. Ryan Celis" onerror="this.style.display='none'"
+             onclick="openPhoto('profile/CELIS.jpeg','Prof. Ryan Celis — Junior Adviser, LITS')">
+      </div>
+      <span class="modal-tag">// JUNIOR ADVISER &mdash; LITS</span>
+      <div class="modal-name">Prof. Ryan Celis</div>
+      <div class="modal-sub">INSTRUCTOR I &middot; BSIT DEPARTMENT</div>
+      <hr class="modal-hr">
+      <div class="modal-content">
+        <h3>That One Professor</h3>
+        <p>Prof. Ryan Celis is that one professor who never gets tired of teaching — someone who makes everything easier to understand and whose patience students truly appreciate. His way of breaking down complex IT concepts into their simplest, most enjoyable forms is something his students never forget.</p>
+        <h3>More Than Technical</h3>
+        <p>He teaches more than technology. He teaches the attitudes and values that are vital for a future in IT — and he does it with kindness, dedication, and a commitment to his students that goes far beyond the classroom. His lectures are, quite simply, legendary.</p>
+        <h3>Role in LITS</h3>
+        <p>As LITS Junior Adviser, Prof. Celis serves as technical consultant and genuine supporter of everything the organization stands for, consistently inspiring members to become better versions of themselves.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══ EXECUTIVE MODALS — plain paragraphs only, no h3/strong ══ -->
+
+<div class="modal-overlay" id="m-pres" onclick="closeModalOutside(event,'m-pres')">
+  <div class="modal-box">
+    <button class="modal-close-btn" onclick="closeModal('m-pres')">&#x2715; CLOSE</button>
+    <div class="modal-inner">
+      <div class="modal-img-wrap"><img src="profile/nikol.png" alt="Nicole David" onerror="this.style.display='none'" onclick="openPhoto('profile/nikol.png','Nicole David — President')"></div>
+      <span class="modal-tag">// PRESIDENT &mdash; LITS A.Y. 2025&ndash;2026</span>
+      <div class="modal-name">Nicole David</div>
+      <div class="modal-sub">PRESIDENT &middot; BSIT &mdash; 4TH YEAR</div>
+      <hr class="modal-hr">
+      <div class="modal-content">
+        <p>A consistent academic achiever and scholar, Nicole David is a 4th year BSIT student who has grown with LITS every step of the way. She served as LITS Secretary during A.Y. 2024–2025, and now leads the organization as President for 2025–2026. Her journey from secretary to president gives her a unique, behind-the-scenes understanding of the org's heartbeat — combined with a deep commitment to every IT student's welfare.</p>
+        <p>Nicole's platform rests on Technical Empowerment, Inclusive Community, and Industry Readiness. Through these pillars she aims to bridge academic excellence with real-world skills, ensuring that every member grows both personally and professionally.</p>
+        <p>"LITS is not just a line on your resume — it's the community that shapes who you become as a professional. Whether you're a freshman or a senior, there's always room to learn, lead, and belong."</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal-overlay" id="m-vpi" onclick="closeModalOutside(event,'m-vpi')">
+  <div class="modal-box">
+    <button class="modal-close-btn" onclick="closeModal('m-vpi')">&#x2715; CLOSE</button>
+    <div class="modal-inner">
+      <div class="modal-img-wrap"><img src="profile/ZHYMEE.jpg" alt="Zhymee Bacacao" onerror="this.style.display='none'" onclick="openPhoto('profile/ZHYMEE.jpg','Zhymee Bacacao — VP Internal')"></div>
+      <span class="modal-tag">// VICE PRESIDENT &mdash; INTERNAL</span>
+      <div class="modal-name">Zhymee Bacacao</div>
+      <div class="modal-sub">VP &mdash; INTERNAL &middot; BSIT &mdash; 3RD YEAR</div>
+      <hr class="modal-hr">
+      <div class="modal-content">
+        <p>Zhymee Bacacao oversees all intra-organizational affairs — from committee coordination and member welfare to conflict resolution and general assembly management.</p>
+        <p>Zhymee spearheaded the LITS Member Mentorship Program and restructured internal communication channels, significantly improving event turnout and member engagement across the organization.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal-overlay" id="m-vpe" onclick="closeModalOutside(event,'m-vpe')">
+  <div class="modal-box">
+    <button class="modal-close-btn" onclick="closeModal('m-vpe')">&#x2715; CLOSE</button>
+    <div class="modal-inner">
+      <div class="modal-img-wrap"><img src="profile/charlize.jpg" alt="Charlize Fe" onerror="this.style.display='none'" onclick="openPhoto('profile/charlize.jpg','Charlize Fe — VP External')"></div>
+      <span class="modal-tag">// VICE PRESIDENT &mdash; EXTERNAL &mdash; LITS A.Y. 2025&ndash;2026</span>
+      <div class="modal-name">Charlize Fe</div>
+      <div class="modal-sub">VP &mdash; EXTERNAL &middot; BSIT &mdash; 4TH YEAR</div>
+      <hr class="modal-hr">
+      <div class="modal-content">
+        <p>A naturally hardworking and driven leader, Charlize Fe brings extensive governance experience to LITS. Before joining the organization, she served as the Engineering Student Council President from 2023 to 2024, where she honed her skills in representation and stakeholder management. Now as LITS Vice President for External Affairs for the 2025–2026 term, she channels that same dedication toward building bridges between IT students and the broader professional community.</p>
+        <p>Charlize manages all inter-organizational relationships, industry partnerships, media presence, and public-facing events as LITS's external ambassador. Her leadership has already strengthened multiple industry collaborations and opened new channels for exclusive member opportunities, ensuring that LITS remains a vital link between academic life and career readiness.</p>
+        <p>She believes that strong external connections create internal growth. Through strategic partnerships and authentic engagement, Charlize aims to give every LITS member access to mentors, companies, and real-world experiences.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal-overlay" id="m-sec" onclick="closeModalOutside(event,'m-sec')">
+  <div class="modal-box">
+    <button class="modal-close-btn" onclick="closeModal('m-sec')">&#x2715; CLOSE</button>
+    <div class="modal-inner">
+      <div class="modal-img-wrap"><img src="profile/KARL.JPG" alt="Karl Louie Laquian" onerror="this.style.display='none'" onclick="openPhoto('profile/KARL.JPG','Karl Louie Laquian — Secretary')"></div>
+      <span class="modal-tag">// SECRETARY &mdash; LITS A.Y. 2025&ndash;2026</span>
+      <div class="modal-name">Karl Louie Laquian</div>
+      <div class="modal-sub">SECRETARY &middot; BSIT &mdash; 2ND YEAR</div>
+      <hr class="modal-hr">
+      <div class="modal-content">
+        <p>Karl Louie Laquian served as the 1st Year Representative during A.Y. 2024–2025 and now steps into the role of Secretary for 2025–2026. He is responsible for all documentation, official correspondence, meeting minutes, membership records, and the org's official archive.</p>
+        <p>Karl is known for being incredibly easy to approach — students and officers alike feel comfortable asking him questions or sharing concerns. However, he also carries a passive-aggressive streak that somehow keeps everyone on their toes and deadlines in check. Beneath that laid-back demeanor is a genuinely hardworking student who juggles academics and org duties without missing a beat. He believes that clear records make for a transparent organization, and his attention to detail has elevated LITS's official communications to a new level of professionalism.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal-overlay" id="m-tres" onclick="closeModalOutside(event,'m-tres')">
+  <div class="modal-box">
+    <button class="modal-close-btn" onclick="closeModal('m-tres')">&#x2715; CLOSE</button>
+    <div class="modal-inner">
+      <div class="modal-img-wrap"><img src="profile/sean2.jpg" alt="Sean Michael Cayabyab" onerror="this.style.display='none'" onclick="openPhoto('profile/sean2.jpg','Sean Michael Cayabyab — Treasurer')"></div>
+      <span class="modal-tag">// TREASURER &mdash; LITS A.Y. 2025&ndash;2026</span>
+      <div class="modal-name">Sean Michael Cayabyab</div>
+      <div class="modal-sub">TREASURER &middot; BSIT &mdash; 3RD YEAR</div>
+      <hr class="modal-hr">
+      <div class="modal-content">
+        <p>Sean Michael Cayabyab manages fund collection, disbursements, financial reports, and budget proposals with precision and full transparency. His careful handling of the organization's finances ensures that every peso is accounted for and every activity is properly funded.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal-overlay" id="m-aud" onclick="closeModalOutside(event,'m-aud')">
+  <div class="modal-box">
+    <button class="modal-close-btn" onclick="closeModal('m-aud')">&#x2715; CLOSE</button>
+    <div class="modal-inner">
+      <div class="modal-img-wrap"><img src="profile/pat.png" alt="Patrick Cyrl Ramos" onerror="this.style.display='none'" onclick="openPhoto('profile/pat.png','Patrick Cyrl Ramos — OIC Auditor')"></div>
+      <span class="modal-tag">// OIC AUDITOR &mdash; LITS A.Y. 2025&ndash;2026</span>
+      <div class="modal-name">Patrick Cyril Ramos</div>
+      <div class="modal-sub">OIC AUDITOR &middot; BSIT &mdash; 1ST YEAR</div>
+      <hr class="modal-hr">
+      <div class="modal-content">
+        <p>Originally a member of the Technical Committee, Patrick Cyrl Ramos now serves as the Officer-in-Charge (OIC) Auditor for A.Y. 2025–2026 — a testament to the trust the organization places in him, even as a first-year student.</p>
+        <p>He reviews all financial transactions, validates receipts, and conducts quarterly audits, ensuring full accountability and integrity for LITS finances. Despite being a freshman, Patrick has shown the maturity and precision needed to keep the org's funds in check, proving that dedication matters more than year level.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal-overlay" id="m-pro" onclick="closeModalOutside(event,'m-pro')">
+  <div class="modal-box">
+    <button class="modal-close-btn" onclick="closeModal('m-pro')">&#x2715; CLOSE</button>
+    <div class="modal-inner">
+      <div class="modal-img-wrap">
+        <img src="profile/dendale.jpg" alt="Dendale Mendoza" onerror="this.style.display='none'"
+             onclick="openPhoto('profile/dendale.jpg','Dendale Mendoza — PRO')">
+      </div>
+      <span class="modal-tag">// PUBLIC RELATIONS OFFICER &mdash; LITS A.Y. 2024&ndash;2025</span>
+      <div class="modal-name">Dendale Mendoza</div>
+      <div class="modal-sub">PRO &middot; BSIT &mdash; 4TH YEAR</div>
+      <hr class="modal-hr">
+      <div class="modal-content">
+        <p>Dendale Mendoza is the Public Relations Officer of LITS — the person responsible for how the organization presents itself to the world. As a 4th year BSIT student, he brings both the technical eye of a seasoned IT student and the creative instinct of someone who genuinely loves what he does.</p>
+        <p>Dendale is, simply put, one of the most hardworking officers and students in the organization. He manages LITS's public image, coordinates announcements and promotions, and ensures that every event reaches the audience it deserves — all with the quiet professionalism that defines his work.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal-overlay" id="m-bm" onclick="closeModalOutside(event,'m-bm')">
+  <div class="modal-box">
+    <button class="modal-close-btn" onclick="closeModal('m-bm')">&#x2715; CLOSE</button>
+    <div class="modal-inner">
+      <div class="modal-img-wrap"><img src="profile/franco.png" alt="Francois Ross Franco" onerror="this.style.display='none'" onclick="openPhoto('profile/franco.png','Francois Ross Franco — Business Manager')"></div>
+      <span class="modal-tag">// BUSINESS MANAGER &mdash; LITS A.Y. 2025&ndash;2026</span>
+      <div class="modal-name">Francois Ross Franco</div>
+      <div class="modal-sub">BUSINESS MANAGER &middot; BSIT &mdash; 4TH YEAR</div>
+      <hr class="modal-hr">
+      <div class="modal-content">
+        <p>Francois Ross Franco oversees all revenue-generating activities — merchandise, sponsorships, event tickets, and the LITS online store — significantly increasing the org's financial sustainability and ensuring that every event has the resources it needs to succeed.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal-overlay" id="m-4yr" onclick="closeModalOutside(event,'m-4yr')">
+  <div class="modal-box">
+    <button class="modal-close-btn" onclick="closeModal('m-4yr')">&#x2715; CLOSE</button>
+    <div class="modal-inner">
+      <div class="modal-img-wrap"><img src="profile/ziah.JPG" alt="Ziah Mayoralgo" onerror="this.style.display='none'" onclick="openPhoto('profile/ziah.JPG','Ziah Mayoralgo — 4th Year Rep')"></div>
+      <span class="modal-tag">// 4TH YEAR REPRESENTATIVE &mdash; LITS A.Y. 2025&ndash;2026</span>
+      <div class="modal-name">Ziah Mayoralgo</div>
+      <div class="modal-sub">4TH YEAR REP &middot; BSIT &mdash; 4TH YEAR</div>
+      <hr class="modal-hr">
+      <div class="modal-content">
+        <p>Ziah Mayoralgo is the voice of the graduating class within LITS, advocating for 4th year IT students on thesis support, job placement, and licensure exam preparation.</p>
+        <p>Beyond her official duties, she's known as one of the most approachable and friendly officers — always ready with a joke or a warm smile to lighten the mood. Her natural charisma makes her an excellent host for events, where she effortlessly keeps the energy high and the audience engaged. Behind all that fun is a deeply hardworking individual who balances academics, org responsibilities, and event hosting with dedication and grace.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal-overlay" id="m-2yr" onclick="closeModalOutside(event,'m-2yr')">
+  <div class="modal-box">
+    <button class="modal-close-btn" onclick="closeModal('m-2yr')">&#x2715; CLOSE</button>
+    <div class="modal-inner">
+      <div class="modal-img-wrap"><img src="profile/princes.jpg" alt="Princes Joy Dela Cruz" onerror="this.style.display='none'" onclick="openPhoto('profile/princes.jpg','Princes Joy Dela Cruz — 2nd Year Rep')"></div>
+      <span class="modal-tag">// 2ND YEAR REPRESENTATIVE &mdash; LITS A.Y. 2025&ndash;2026</span>
+      <div class="modal-name">Princes Joy Dela Cruz</div>
+      <div class="modal-sub">2ND YEAR REP &middot; BSIT &mdash; 2ND YEAR</div>
+      <hr class="modal-hr">
+      <div class="modal-content">
+        <p>Princes Joy Dela Cruz bridges communication between LITS leadership and the sophomore student body, ensuring 2nd year concerns are always heard at the executive level. She is a dedicated academic achiever who consistently excels in her studies while juggling org responsibilities.</p>
+        <p>Known for her friendly and approachable nature, she makes it easy for her fellow sophomores to voice their ideas and feedback. Behind her warm smile is an incredibly hardworking officer and student — someone who leads by example and never hesitates to go the extra mile for the people she serves.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal-overlay" id="m-1yr" onclick="closeModalOutside(event,'m-1yr')">
+  <div class="modal-box">
+    <button class="modal-close-btn" onclick="closeModal('m-1yr')">&#x2715; CLOSE</button>
+    <div class="modal-inner">
+      <div class="modal-img-wrap"><img src="profile/mae.jpg" alt="Maebelle Saniano" onerror="this.style.display='none'" onclick="openPhoto('profile/mae.jpg','Maebelle Saniano — 1st Year Rep')"></div>
+      <span class="modal-tag">// 1ST YEAR REPRESENTATIVE &mdash; LITS A.Y. 2025&ndash;2026</span>
+      <div class="modal-name">Maebelle Saniano</div>
+      <div class="modal-sub">1ST YEAR REP &middot; BSIT &mdash; 1ST YEAR</div>
+      <hr class="modal-hr">
+      <div class="modal-content">
+        <p>Maebelle Saniano is the link between LITS leadership and the freshmen, bringing maturity and dedication far beyond her year level. An academic achiever with a consistently strong record, she balances her studies with org work effortlessly.</p>
+        <p>She is incredibly approachable and radiates warmth — her presence lights up any room she walks into. Currently, she is also running for Secretary of the Engineering Student Council, proving that her leadership potential is already recognized across colleges. Many see her as a future LITS president in the making.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div>
+      <span class="footer-brand-abbr">LITS</span>
+      <span class="footer-brand-full">LEAGUE OF INFORMATION TECHNOLOGY STUDENTS</span>
+      <p>Igniting innovation and building the next generation of IT leaders.</p>
+      <div class="footer-socials">
+        <a class="soc" href="#">f</a><a class="soc" href="#">&#x1D54F;</a>
+        <a class="soc" href="#">ig</a><a class="soc" href="#">in</a>
+        <a class="soc" href="#">gh</a><a class="soc" href="#">dc</a>
+      </div>
+    </div>
+    <div class="footer-col"><h4>NAVIGATION</h4><ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="history.html">History</a></li>
+      <li><a href="officers.html">Officers</a></li>
+      <li><a href="partners.html">Partners</a></li>
+      <li><a href="contacts.html">Contacts</a></li>
+    </ul></div>
+    <div class="footer-col"><h4>OFFICERS</h4><ul>
+      <li><a href="#">President</a></li>
+      <li><a href="#">VP Internal</a></li>
+      <li><a href="#">VP External</a></li>
+      <li><a href="#">Secretary</a></li>
+      <li><a href="#">Treasurer</a></li>
+      <li><a href="#">Auditor</a></li>
+      <li><a href="#">PRO &mdash; Dendale Mendoza</a></li>
+    </ul></div>
+    <div class="footer-col"><h4>CONTACT</h4>
+      <div class="footer-contact-row"><span class="ico">&#x2709;</span><span>lits.official@university.edu.ph</span></div>
+      <div class="footer-contact-row"><span class="ico">&#x1F4CD;</span><span>IT Building, Room 204</span></div>
+      <div class="footer-contact-row"><span class="ico">&#x23F0;</span><span>Mon&ndash;Fri, 10AM&ndash;5PM</span></div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 <span>LITS &mdash; League of IT Students</span>. All rights reserved.</p>
+    <p>Built with <span>&#x2665;</span> by the LITS Web Development Team</p>
+  </div>
+</footer>
+
+<script>
+const obs = new IntersectionObserver((entries) => {
+  entries.forEach((e, i) => {
+    if (e.isIntersecting) { setTimeout(() => e.target.classList.add('v'), i * 80); obs.unobserve(e.target); }
+  });
+}, { threshold: 0.08 });
+document.querySelectorAll('.reveal, .reveal-l, .reveal-r').forEach(el => obs.observe(el));
+
+document.getElementById('navToggle').addEventListener('click', () =>
+  document.getElementById('navLinks').classList.toggle('open'));
+
+function openModal(id) {
+  const m = document.getElementById(id);
+  if (m) { m.classList.add('open'); document.body.style.overflow = 'hidden'; }
+}
+function closeModal(id) {
+  const m = document.getElementById(id);
+  if (m) { m.classList.remove('open'); document.body.style.overflow = ''; }
+}
+function closeModalOutside(e, id) {
+  if (e.target === document.getElementById(id)) closeModal(id);
+}
+
+function openPhoto(src, name) {
+  document.getElementById('lightboxImg').src = src;
+  document.getElementById('lightboxName').textContent = name;
+  document.getElementById('photoLightbox').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+function closeLightbox() {
+  document.getElementById('photoLightbox').classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') {
+    document.querySelectorAll('.modal-overlay.open').forEach(m => m.classList.remove('open'));
+    document.getElementById('photoLightbox').classList.remove('open');
+    document.body.style.overflow = '';
+  }
+});
+
+function drawBridges() {
+  ['l2', 'l3', 'l4'].forEach(lid => {
+    const layer = document.getElementById(lid);
+    if (!layer) return;
+    const nodes = layer.querySelectorAll('.o-card');
+    if (nodes.length < 2) return;
+    const lr    = layer.getBoundingClientRect();
+    const first = nodes[0].getBoundingClientRect();
+    const last  = nodes[nodes.length - 1].getBoundingClientRect();
+    const left  = (first.left + first.width / 2) - lr.left;
+    const right = (last.left  + last.width  / 2) - lr.left;
+    let bridge  = layer.querySelector('.h-bridge');
+    if (!bridge) {
+      bridge = document.createElement('div');
+      bridge.className = 'h-bridge';
+      layer.style.position = 'relative';
+      layer.appendChild(bridge);
+    }
+    bridge.style.left  = left + 'px';
+    bridge.style.width = (right - left) + 'px';
+    bridge.style.top   = '-38px';
+  });
+}
+window.addEventListener('load',   () => setTimeout(drawBridges, 150));
+window.addEventListener('resize', () => setTimeout(drawBridges, 100));
+</script>
+</body>
+</html>

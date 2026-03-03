@@ -1,0 +1,512 @@
+/* =====================================================
+   LITS — index.css  (Homepage styles)
+   Import after shared.css
+   ===================================================== */
+
+/* ── HERO SECTION ── */
+.hero {
+  min-height: 100vh;
+  padding-top: 72px;
+  display: flex; align-items: center; justify-content: center;
+  text-align: center;
+  position: relative; overflow: hidden;
+  background:
+    radial-gradient(ellipse 80% 60% at 50% 30%, rgba(26,62,122,.5) 0%, transparent 70%),
+    radial-gradient(ellipse 50% 40% at 80% 80%, rgba(217,48,16,.07) 0%, transparent 60%),
+    linear-gradient(180deg, #000 0%, var(--bg) 50%, var(--bg2) 100%);
+}
+.hero::after {
+  content: ''; position: absolute; inset: 0; pointer-events: none;
+  background-image:
+    linear-gradient(rgba(245,197,24,.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(245,197,24,.04) 1px, transparent 1px);
+  background-size: 60px 60px;
+  mask-image: radial-gradient(ellipse at center, black 30%, transparent 75%);
+  -webkit-mask-image: radial-gradient(ellipse at center, black 30%, transparent 75%);
+}
+
+/* Floating particles */
+.hero-particles { position: absolute; inset: 0; overflow: hidden; pointer-events: none; }
+.particle {
+  position: absolute; width: 3px; height: 3px; border-radius: 50%;
+  background: var(--yellow); opacity: 0;
+  animation: pfloat 9s infinite;
+}
+@keyframes pfloat {
+  0%   { opacity: 0; transform: translateY(0) translateX(0); }
+  10%  { opacity: .8; }
+  90%  { opacity: .8; }
+  100% { opacity: 0; transform: translateY(-110vh) translateX(var(--dx, 20px)); }
+}
+.particle:nth-child(1) { left:8%;  top:90%; animation-delay:0s;   animation-duration:10s; --dx:22px; }
+.particle:nth-child(2) { left:22%; top:88%; animation-delay:1.3s; animation-duration:7s;  --dx:-18px; background:var(--orange); }
+.particle:nth-child(3) { left:38%; top:91%; animation-delay:.6s;  animation-duration:11s; --dx:30px; }
+.particle:nth-child(4) { left:52%; top:87%; animation-delay:2.2s; animation-duration:9s;  --dx:-24px; background:var(--red); }
+.particle:nth-child(5) { left:67%; top:89%; animation-delay:1.8s; animation-duration:10s; --dx:12px; }
+.particle:nth-child(6) { left:82%; top:86%; animation-delay:.9s;  animation-duration:8s;  --dx:-32px; background:var(--amber); }
+
+.hero-content { position: relative; z-index: 2; max-width: 1500px; padding: 0 2rem; }
+
+.hero-eyebrow {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: .72rem; letter-spacing: .38em; color: rgba(245,197,24,.7);
+  margin-bottom: 1.5rem;
+  display: flex; align-items: center; justify-content: center; gap: 1rem;
+  animation: fadeUp .8s ease both;
+}
+.hero-eyebrow::before, .hero-eyebrow::after {
+  content: ''; flex: 0 0 60px; max-width: 80px;
+  height: 1px; background: var(--fire); opacity: .5;
+}
+
+.hero-logo {
+  width: 150px; height: 150px; margin: 0 auto 1.8rem;
+  filter: drop-shadow(0 0 28px rgba(240,115,24,.6)) drop-shadow(0 0 70px rgba(245,197,24,.3));
+  animation: heroFloat 4s ease-in-out infinite, fadeUp 1s ease .2s both;
+}
+@keyframes heroFloat {
+  0%,100% { transform: translateY(0); }
+  50%      { transform: translateY(-12px); }
+}
+
+.hero-title {
+  font-family: 'Orbitron', sans-serif;
+  font-size: clamp(1.6rem,7vw,4.5rem); font-weight: 900;
+  line-height: .92; letter-spacing: -.01em;
+  background: var(--fire-diag);
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+  margin-bottom: .9rem;
+  animation: fadeUp 1s ease .4s both;
+}
+.hero-sub {
+  font-family: 'Orbitron', sans-serif;
+  font-size: clamp(.72rem,2vw,.95rem); letter-spacing: .28em;
+  color: rgba(255,255,255,.45); margin-bottom: 1.6rem;
+  animation: fadeUp 1s ease .6s both;
+}
+.hero-desc {
+  font-size: 1.05rem; line-height: 1.8; color: var(--w80);
+  max-width: 600px; margin: 0 auto 2.2rem;
+  animation: fadeUp 1s ease .8s both;
+}
+.hero-desc strong { color: var(--yellow); }
+
+.hero-btns {
+  display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;
+  animation: fadeUp 1s ease 1s both;
+}
+
+/* Scroll indicator */
+.hero-scroll {
+  position: absolute; bottom: 2rem; left: 50%; transform: translateX(-50%);
+  display: flex; flex-direction: column; align-items: center; gap: 8px;
+  animation: fadeUp 1s ease 1.4s both; z-index: 2;
+}
+.hero-scroll span {
+  font-family: 'Share Tech Mono', monospace; font-size: .58rem;
+  letter-spacing: .3em; color: var(--w30);
+}
+.scroll-bar {
+  width: 1px; height: 40px;
+  background: linear-gradient(to bottom, var(--orange), transparent);
+  animation: scrollPulse 1.8s ease-in-out infinite;
+}
+@keyframes scrollPulse { 0%,100%{opacity:.3} 50%{opacity:1} }
+@keyframes fadeUp {
+  from { opacity:0; transform:translateY(22px); }
+  to   { opacity:1; transform:translateY(0); }
+}
+
+/* ── ABOUT SECTION ── */
+.about-section {
+  background:
+    radial-gradient(ellipse 60% 50% at 0% 50%, rgba(26,62,122,.3) 0%, transparent 60%),
+    linear-gradient(180deg, var(--bg2) 0%, #000 100%);
+  border-top: 1px solid rgba(255,255,255,.05);
+  border-bottom: 1px solid rgba(255,255,255,.05);
+}
+.about-grid {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: center;
+}
+.about-text p {
+  font-size: 1rem; line-height: 1.85; color: var(--w80); margin-bottom: 1rem;
+}
+.about-text p strong { color: var(--orange); }
+.stats-row {
+  display: grid; grid-template-columns: repeat(3,1fr);
+  margin-top: 2rem; border: 1px solid rgba(245,197,24,.12); overflow: hidden;
+}
+.stat-cell {
+  padding: 1.4rem; text-align: center;
+  background: rgba(15,36,72,.4); border-right: 1px solid rgba(245,197,24,.08);
+  transition: background .3s;
+}
+.stat-cell:last-child { border-right: none; }
+.stat-cell:hover { background: rgba(26,62,122,.4); }
+.stat-num {
+  font-family: 'Orbitron', sans-serif; font-size: 1.9rem; font-weight: 900;
+  background: var(--fire-diag); -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+  background-clip: text; display: block;
+}
+.stat-lbl { font-family: 'Share Tech Mono', monospace; font-size: .62rem; letter-spacing: .2em; color: var(--w30); }
+
+/* ══════════════════════════════════════════
+   OVERLAPPING PHOTO COLLAGE
+   ══════════════════════════════════════════ */
+.about-photo-collage {
+  position: relative;
+  width: 100%;
+  height: 480px;
+}
+
+/* Each card is a positioned photo frame */
+.collage-card {
+  position: absolute;
+  overflow: hidden;
+  border: 2px solid rgba(245,197,24,.18);
+  box-shadow: 0 20px 60px rgba(0,0,0,.7);
+  transition: transform .4s ease, box-shadow .4s ease, z-index 0s;
+}
+.collage-card img {
+  width: 100%; height: 100%;
+  object-fit: cover; object-position: center;
+  display: block; transition: transform .5s ease;
+}
+.collage-card:hover img { transform: scale(1.06); }
+.collage-card:hover {
+  box-shadow: 0 30px 80px rgba(240,115,24,.35);
+  z-index: 10 !important;
+}
+
+/* Fallback when no photo loaded */
+.collage-card.no-photo {
+  background: linear-gradient(135deg, rgba(26,62,122,.5), rgba(8,16,30,.8));
+}
+.collage-card.no-photo::after {
+  content: attr(data-label);
+  position: absolute; inset: 0;
+  display: flex; align-items: center; justify-content: center;
+  font-family: 'Share Tech Mono', monospace; font-size: .65rem;
+  letter-spacing: .2em; color: rgba(245,197,24,.3);
+}
+
+/* Label on each card */
+.collage-label {
+  position: absolute; bottom: 0; left: 0; right: 0;
+  padding: 6px 10px;
+  font-family: 'Share Tech Mono', monospace; font-size: .52rem; letter-spacing: .16em;
+  background: linear-gradient(to top, rgba(0,0,0,.85), transparent);
+  color: rgba(245,197,24,.7); pointer-events: none;
+}
+
+/* BACK card — large, slight tilt left, lowest layer */
+.collage-back {
+  width: 78%; height: 300px;
+  top: 0; right: 0;
+  transform: rotate(2deg);
+  z-index: 1;
+}
+
+/* MID card — medium, slight tilt right, middle layer */
+.collage-mid {
+  width: 60%; height: 260px;
+  top: 120px; left: 0;
+  transform: rotate(-2.5deg);
+  z-index: 2;
+  border-color: rgba(240,115,24,.3);
+}
+
+/* FRONT card — small square, front and center, no tilt */
+.collage-front {
+  width: 44%; height: 200px;
+  bottom: 0; right: 8%;
+  transform: rotate(1deg);
+  z-index: 3;
+  border-color: rgba(245,197,24,.45);
+  border-width: 3px;
+  box-shadow: 0 10px 40px rgba(245,197,24,.2), 0 20px 60px rgba(0,0,0,.6);
+}
+
+/* Year badge floating accent */
+.collage-badge {
+  position: absolute;
+  top: 30px; left: 12%;
+  z-index: 5;
+  background: var(--fire);
+  padding: 10px 14px;
+  text-align: center;
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%);
+  box-shadow: 0 8px 20px rgba(240,115,24,.5);
+  animation: badgePulse 3s ease-in-out infinite;
+}
+@keyframes badgePulse {
+  0%,100% { transform: translateY(0); box-shadow: 0 8px 20px rgba(240,115,24,.5); }
+  50%      { transform: translateY(-5px); box-shadow: 0 14px 30px rgba(240,115,24,.8); }
+}
+.badge-year {
+  display: block;
+  font-family: 'Share Tech Mono', monospace; font-size: .5rem; letter-spacing: .18em;
+  color: rgba(0,0,0,.7);
+}
+.badge-num {
+  display: block;
+  font-family: 'Orbitron', sans-serif; font-size: .8rem; font-weight: 900;
+  color: #000; line-height: 1.2;
+}
+
+/* ── EVENTS SHOWCASE ── */
+.events-strip {
+  background: linear-gradient(180deg, #000 0%, var(--bg2) 50%, #000 100%);
+}
+.events-strip-inner { max-width: 1100px; margin: 0 auto; }
+
+/* 3-col grid; hero card spans full width */
+.events-featured {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1.5rem;
+  margin-top: 2.5rem;
+}
+.events-featured .card-hero {
+  grid-column: 1 / -1;
+}
+
+/* ── EVENT CARD ── */
+.ev-card {
+  background: linear-gradient(145deg, rgba(12,24,48,.9), rgba(5,8,15,.95));
+  border: 1px solid rgba(245,197,24,.1);
+  position: relative; overflow: hidden;
+  transition: transform .3s, border-color .3s, box-shadow .3s;
+  display: flex; flex-direction: column;
+  clip-path: polygon(0 0, calc(100% - 14px) 0, 100% 14px, 100% 100%, 14px 100%, 0 calc(100% - 14px));
+}
+.ev-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(240,115,24,.4);
+  box-shadow: 0 20px 60px rgba(240,115,24,.2);
+}
+.ev-card::before {
+  content:''; position:absolute; top:0; left:0; right:0; height:3px; background:var(--fire);
+}
+
+/* ── CARD IMAGE AREA — now uses <img> ── */
+.ev-card-img {
+  width: 100%;
+  position: relative; overflow: hidden;
+  min-height: 180px;
+  background: linear-gradient(135deg, rgba(26,62,122,.7), rgba(8,16,30,.9));
+}
+.card-hero .ev-card-img { min-height: 260px; }
+
+/*
+  ════════════════════════════════════════════
+  ev-card-bg-img: the photo inside each event card
+  Simply set src="your-photo.jpg" in the HTML.
+  ════════════════════════════════════════════
+*/
+.ev-card-bg-img {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  object-fit: cover; object-position: center;
+  display: block;
+  transition: transform .5s ease;
+  z-index: 0;
+}
+.ev-card:hover .ev-card-bg-img { transform: scale(1.05); }
+
+/* Overlay on top of photo */
+.ev-card-img::after {
+  content: ''; position: absolute; inset: 0;
+  background: linear-gradient(to top, rgba(5,8,15,1) 0%, rgba(5,8,15,.35) 60%, transparent 100%);
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* Hatch pattern over photo */
+.ev-card-img::before {
+  content: ''; position: absolute; inset: 0; z-index: 2; pointer-events: none;
+  background: repeating-linear-gradient(
+    -45deg,
+    rgba(245,197,24,.025) 0,rgba(245,197,24,.025) 1px,
+    transparent 1px, transparent 10px
+  );
+}
+
+.ev-type-badge {
+  position: absolute; top: 1rem; right: 1rem; z-index: 3;
+  font-family: 'Share Tech Mono', monospace; font-size: .58rem; letter-spacing: .16em;
+  background: var(--fire); color: #000; padding: 4px 12px;
+  clip-path: polygon(5px 0%,100% 0%,calc(100% - 5px) 100%,0% 100%);
+}
+
+.ev-card-body { padding: 1.4rem 1.5rem; flex: 1; display: flex; flex-direction: column; position: relative; z-index: 2; }
+.ev-date {
+  font-family: 'Share Tech Mono', monospace; font-size: .62rem; letter-spacing: .2em;
+  color: rgba(245,197,24,.6); margin-bottom: .4rem;
+}
+.ev-title {
+  font-family: 'Orbitron', sans-serif; font-size: 1rem; font-weight: 700;
+  color: var(--white); line-height: 1.25; margin-bottom: .7rem;
+}
+.card-hero .ev-title { font-size: 1.3rem; }
+.ev-desc { font-size: .9rem; line-height: 1.7; color: var(--w55); flex: 1; }
+
+.ev-card-footer {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: .9rem 1.5rem;
+  border-top: 1px solid rgba(245,197,24,.07);
+  position: relative; z-index: 2;
+}
+.ev-location { font-family: 'Share Tech Mono', monospace; font-size: .6rem; color: var(--w30); }
+.ev-arrow {
+  width: 28px; height: 28px; border: 1px solid rgba(240,115,24,.4);
+  display: flex; align-items: center; justify-content: center;
+  color: var(--orange); font-size: .85rem;
+  transition: background .2s, border-color .2s;
+}
+.ev-arrow:hover { background: rgba(240,115,24,.15); border-color: var(--orange); }
+
+.see-all-wrap { text-align: center; margin-top: 2.5rem; }
+
+
+/* ── Z-TYPE PILLARS SECTION ── */
+.pillars-section {
+  background:
+    radial-gradient(ellipse 70% 60% at 100% 50%, rgba(26,62,122,.2) 0%, transparent 60%),
+    linear-gradient(180deg, var(--bg2) 0%, #000 100%);
+}
+.pillars-inner { max-width: 1100px; margin: 0 auto; }
+
+.zcard {
+  display: grid; grid-template-columns: 1fr 1fr;
+  min-height: 400px; margin-bottom: 2.5rem;
+  border: 1px solid rgba(245,197,24,.08);
+  overflow: hidden;
+  transition: border-color .3s;
+}
+.zcard:last-child { margin-bottom: 0; }
+.zcard:hover { border-color: rgba(245,197,24,.2); }
+.zcard.flip { direction: rtl; }
+.zcard.flip > * { direction: ltr; }
+
+/* ── ZCARD IMAGE PANEL — now uses <img> ── */
+.zcard-img {
+  position: relative; overflow: hidden; min-height: 380px;
+  background: linear-gradient(135deg, var(--navy), var(--bg));
+  display: flex; flex-direction: column; align-items: flex-start; justify-content: flex-end;
+  padding: 1.2rem;
+}
+
+/*
+  ════════════════════════════════════════════
+  zcard-bg-img: the photo inside each pillar panel
+  Simply set src="your-photo.jpg" in the HTML.
+  ════════════════════════════════════════════
+*/
+.zcard-bg-img {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  object-fit: cover; object-position: center;
+  display: block; z-index: 0;
+  transition: transform .5s ease;
+}
+.zcard:hover .zcard-bg-img { transform: scale(1.05); }
+
+/* Dark overlay over pillar photo */
+.zcard-img::after {
+  content: ''; position: absolute; inset: 0; z-index: 1; pointer-events: none;
+  background: linear-gradient(to top, rgba(5,8,15,.9) 0%, rgba(5,8,15,.4) 60%, rgba(5,8,15,.2) 100%);
+  transition: opacity .3s;
+}
+.zcard:hover .zcard-img::after {
+  background: linear-gradient(to top, rgba(5,8,15,.8) 0%, rgba(5,8,15,.3) 60%, rgba(5,8,15,.1) 100%);
+}
+
+.zcard-img-label {
+  position: relative; z-index: 2;
+  font-family: 'Share Tech Mono', monospace; font-size: .58rem; letter-spacing: .15em;
+  color: rgba(245,197,24,.8);
+  padding: 5px 12px; border: 1px solid rgba(245,197,24,.25);
+  background: rgba(0,0,0,.4);
+}
+
+/* Dual-photo zcard */
+.zcard-imgs-stack { display: flex; flex-direction: column; }
+.zcard-imgs-stack .zcard-img-half {
+  flex: 1; min-height: 190px;
+  position: relative; overflow: hidden;
+  background: linear-gradient(135deg, var(--navy), var(--bg));
+  display: flex; flex-direction: column; align-items: flex-start; justify-content: flex-end;
+  padding: 1rem;
+  border-bottom: 1px solid rgba(245,197,24,.06);
+}
+.zcard-imgs-stack .zcard-img-half:last-child { border-bottom: none; }
+.zcard-imgs-stack .zcard-img-half::after {
+  content: ''; position: absolute; inset: 0; z-index: 1; pointer-events: none;
+  background: linear-gradient(to top, rgba(5,8,15,.85) 0%, rgba(5,8,15,.3) 70%, transparent 100%);
+}
+.zcard-imgs-stack .zcard-bg-img {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  object-fit: cover; object-position: center;
+  display: block; z-index: 0;
+  transition: transform .5s ease;
+}
+.zcard:hover .zcard-imgs-stack .zcard-bg-img { transform: scale(1.05); }
+.zcard-imgs-stack .zcard-img-label {
+  position: relative; z-index: 2;
+  font-family: 'Share Tech Mono', monospace; font-size: .52rem; letter-spacing: .12em;
+  color: rgba(245,197,24,.7);
+}
+
+/* Zcard content panel */
+.zcard-content {
+  padding: 3rem; background: rgba(5,8,15,.97);
+  display: flex; flex-direction: column; justify-content: center;
+  position: relative;
+}
+.zcard-content::before {
+  content:''; position:absolute; left:0; top:10%; bottom:10%; width:3px;
+  background: var(--fire-v);
+}
+.zcard.flip .zcard-content::before { left:auto; right:0; }
+
+.zcard-num {
+  font-family: 'Orbitron', sans-serif; font-size: 4.5rem; font-weight: 900;
+  color: rgba(245,197,24,.04); position:absolute; top:1rem; right:1.2rem; line-height:1;
+}
+.zcard-tag { font-family:'Share Tech Mono',monospace; font-size:.62rem; letter-spacing:.25em; color:var(--orange); margin-bottom:.9rem; }
+.zcard-title {
+  font-family: 'Orbitron', sans-serif; font-size: 1.3rem; font-weight: 800;
+  color: var(--white); line-height: 1.2; margin-bottom: 1rem;
+}
+.zcard-title span { background:var(--fire-diag); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; }
+.zcard-desc { font-size:.96rem; line-height:1.8; color:var(--w55); margin-bottom:1.2rem; }
+.zcard-link {
+  font-family:'Orbitron',sans-serif; font-size:.62rem; letter-spacing:.2em;
+  color:var(--yellow); display:inline-flex; align-items:center; gap:8px; transition:gap .2s;
+}
+.zcard-link:hover { gap:14px; }
+
+
+/* ── RESPONSIVE ── */
+@media (max-width: 900px) {
+  .about-grid { grid-template-columns: 1fr; }
+  .about-photo-collage { height: 300px; margin-top: 2rem; }
+  .collage-back  { width: 75%; height: 200px; }
+  .collage-mid   { width: 58%; height: 180px; top: 80px; }
+  .collage-front { width: 42%; height: 150px; }
+  .events-featured { grid-template-columns: 1fr; }
+  .events-featured .card-hero { grid-column: 1; }
+  .zcard, .zcard.flip { grid-template-columns: 1fr; direction:ltr; }
+  .zcard-imgs-stack { flex-direction: row; }
+  .zcard-imgs-stack .zcard-img-half { border-bottom:none; border-right:1px solid rgba(245,197,24,.06); }
+  .zcard-content { padding: 2rem; }
+  .zcard-content::before,.zcard.flip .zcard-content::before { left:0; right:auto; }
+}
+@media (max-width: 600px) {
+  .events-featured { grid-template-columns: 1fr; gap: 1rem; }
+  .stats-row { grid-template-columns: 1fr; }
+  .stat-cell { border-right: none; border-bottom: 1px solid rgba(245,197,24,.08); }
+  .about-photo-collage { height: 240px; }
+}

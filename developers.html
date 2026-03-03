@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LITS — Developers</title>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="shared.css">
+<link rel="stylesheet" href="developers.css">
+</head>
+<body>
+
+<nav class="site-nav">
+  <a href="index.html" class="nav-brand">
+    <img src="profile/LITS_LOGO.png" alt="LITS Logo">
+    <div class="nav-brand-text"><span class="abbr">LITS</span><span class="full">LEAGUE OF INFORMATION TECHNOLOGY STUDENTS</span></div>
+  </a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html">HOME</a></li>
+    <li><a href="events.html">EVENTS</a></li>
+    <li><a href="history.html">HISTORY</a></li>
+    <li><a href="officers.html">OFFICERS</a></li>
+    <li><a href="partners.html">PARTNERS</a></li>
+    <li><a href="contacts.html">CONTACTS</a></li>
+    <li><a href="about.html">ABOUT</a></li>
+    <li><a href="developers.html" class="active">DEVS</a></li>
+  </ul>
+  <button class="nav-hamburger" id="navToggle"><span></span><span></span><span></span></button>
+</nav>
+
+<div class="page-hero">
+  <div class="page-hero-inner">
+    <div class="breadcrumb"><a href="index.html">HOME</a> &rsaquo; DEVELOPERS</div>
+    <h1 class="page-title">The <span>Dev Team</span></h1>
+    <p class="page-subtitle">The people who built the LITS digital experience &mdash; A.Y. 2024&ndash;2025</p>
+  </div>
+</div>
+
+<div class="section">
+
+  <!-- TERMINAL -->
+  <div class="terminal-block reveal">
+    <div class="term-bar">
+      <div class="term-dot r"></div><div class="term-dot y"></div><div class="term-dot g"></div>
+      <span class="term-title">LITS &mdash; WEB DEV TEAM &mdash; A.Y. 2024&ndash;2025</span>
+    </div>
+    <div class="term-line"><span class="prompt">$ </span><span class="cmd">cat team.txt</span></div>
+    <div class="term-line"><span class="out">✓ 4 developers &mdash; all BSIT 3rd Year</span></div>
+    <div class="term-line"><span class="out">✓ Stack: HTML5 · Internal CSS · Vanilla JS · External CSS</span></div>
+    <div class="term-line"><span class="prompt">$ </span><span class="cmd">./run --display team<span class="cursor"></span></span></div>
+  </div>
+
+  <div class="eyebrow reveal">// MEET THE TEAM</div>
+  <h2 class="section-heading reveal">Our <span>Developers</span></h2>
+
+  <div class="dev-members">
+
+    <!-- ══ MEMBER 1: Zhymee Bacacao ══ -->
+    <div class="dev-member reveal">
+      <div class="dev-photos">
+        <div class="dev-ph-main" onclick="openPhoto('profile/ZHYMEE.jpg','Zhymee P. Bacacao')">
+          <img src="profile/ZHYMEE.jpg" alt="Zhymee Bacacao" onerror="this.style.display='none'">
+          <div class="ph-view"><span>VIEW</span></div>
+        </div>
+        <div class="dev-ph-sec" onclick="openPhoto('devs_assets/dev4.png','Zhymee P. Bacacao - Secondary')">
+          <img src="devs_assets/dev4.png" alt="Zhymee Bacacao" onerror="this.style.display='none'">
+          <div class="ph-view"><span>VIEW</span></div>
+        </div>
+      </div>
+      <div class="dev-info">
+        <div class="dev-number">01</div>
+        <div class="dev-role-tag">// UI DESIGNER &amp; CODER</div>
+        <div class="dev-name">Bacacao, Zhymee P.</div>
+        <div class="dev-course">BSIT &mdash; 3RD YEAR</div>
+        <div class="dev-email">bacacao.zhymee@ue.edu.ph</div>
+        <div class="dev-divider"></div>
+        <div class="dev-desc">
+          Zhymee is the creative backbone of the LITS web team. She shapes how the organization looks and feels online &mdash; translating the LITS identity into bold layouts, refined color systems, and interactions that feel both sharp and alive. Her eye for proportion and her comfort with code make her the rare designer who can take something from mockup to live page without losing any of the vision along the way.
+        </div>
+        <div class="stack-row">
+          <span class="stk">HTML5</span><span class="stk">CSS3</span><span class="stk">JavaScript</span><span class="stk">UI Design</span><span class="stk">Figma</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══ MEMBER 2: Frank Lenard Dela Cruz ══ -->
+    <div class="dev-member reveal">
+      <div class="dev-photos">
+        <div class="dev-ph-main" onclick="openPhoto('devs_assets/dev5.png','Frank Lenard Dela Cruz')">
+          <img src="devs_assets/dev5.png" alt="Frank Lenard Dela Cruz" onerror="this.style.display='none'">
+          <div class="ph-view"><span>VIEW</span></div>
+        </div>
+        <div class="dev-ph-sec" onclick="openPhoto('devs_assets/dev6.png','Frank Lenard Dela Cruz - Secondary')">
+          <img src="devs_assets/dev6.png" alt="Frank Lenard Dela Cruz" onerror="this.style.display='none'">
+          <div class="ph-view"><span>VIEW</span></div>
+        </div>
+      </div>
+      <div class="dev-info">
+        <div class="dev-number">02</div>
+        <div class="dev-role-tag">// CODER &amp; DOCUMENTATION</div>
+        <div class="dev-name">Dela Cruz, Frank Lenard</div>
+        <div class="dev-course">BSIT &mdash; 3RD YEAR</div>
+        <div class="dev-email">delacruz.frank@ue.edu.ph</div>
+        <div class="dev-divider"></div>
+        <div class="dev-desc">
+          Frank brings structure to everything the team builds. As the developer responsible for implementation and documentation, he ensures that every line of code is intentional, every feature is properly recorded, and the codebase remains readable for anyone who picks it up next. His systematic approach to building and writing is the quiet force that keeps the project coherent from start to deployment.
+        </div>
+        <div class="stack-row">
+          <span class="stk">HTML5</span><span class="stk">JavaScript</span><span class="stk">Documentation</span><span class="stk">Code Review</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══ MEMBER 3: Alyssa Marie Santillan ══ -->
+    <div class="dev-member reveal">
+      <div class="dev-photos">
+        <div class="dev-ph-main" onclick="openPhoto('devs_assets/dev1.png','Alyssa Marie Santillan')">
+          <img src="devs_assets/dev1.png" alt="Alyssa Marie Santillan" onerror="this.style.display='none'">
+          <div class="ph-view"><span>VIEW</span></div>
+        </div>
+        <div class="dev-ph-sec" onclick="openPhoto('devs_assets/dev2.png','Alyssa Marie Santillan - Secondary')">
+          <img src="devs_assets/dev2.png" alt="Alyssa Marie Santillan" onerror="this.style.display='none'">
+          <div class="ph-view"><span>VIEW</span></div>
+        </div>
+      </div>
+      <div class="dev-info">
+        <div class="dev-number">03</div>
+        <div class="dev-role-tag">// UI DESIGNER &amp; CODER</div>
+        <div class="dev-name">Santillan, Alyssa Marie</div>
+        <div class="dev-course">BSIT &mdash; 3RD YEAR</div>
+        <div class="dev-email">santillan.alyssamarie@ue.edu.ph</div>
+        <div class="dev-divider"></div>
+        <div class="dev-desc">
+          Alyssa brings warmth and precision to the visual side of the LITS website. She has a talent for making interfaces feel natural &mdash; where nothing feels out of place and every element earns its space on the screen. Working alongside Zhymee, she co-shapes the design language of the site, handling the finer details of spacing, typography, and responsiveness that elevate a functional page into something genuinely beautiful.
+        </div>
+        <div class="stack-row">
+          <span class="stk">HTML5</span><span class="stk">CSS3</span><span class="stk">JavaScript</span><span class="stk">UI Design</span><span class="stk">Responsive</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══ MEMBER 4: Jaira Marie Zarsosa ══ -->
+    <div class="dev-member reveal">
+      <div class="dev-photos">
+        <div class="dev-ph-main" onclick="openPhoto('devs_assets/dev7.png','Jaira Marie Zarsosa')">
+          <img src="devs_assets/dev7.png" alt="Jaira Marie Zarsosa" onerror="this.style.display='none'">
+          <div class="ph-view"><span>VIEW</span></div>
+        </div>
+        <div class="dev-ph-sec" onclick="openPhoto('devs_assets/dev3.png','Jaira Marie Zarsosa - Secondary')">
+          <img src="devs_assets/dev3.png" alt="Jaira Marie Zarsosa" onerror="this.style.display='none'">
+          <div class="ph-view"><span>VIEW</span></div>
+        </div>
+      </div>
+      <div class="dev-info">
+        <div class="dev-number">04</div>
+        <div class="dev-role-tag">// CODER &amp; DOCUMENTATION</div>
+        <div class="dev-name">Zarzoso, Jaira Marie</div>
+        <div class="dev-course">BSIT &mdash; 3RD YEAR</div>
+        <div class="dev-email">zarzoso.jaira@ue.edu.ph</div>
+        <div class="dev-divider"></div>
+        <div class="dev-desc">
+          Jaira is methodical, thorough, and detail-oriented &mdash; exactly what a project needs when the stakes are high and accuracy matters. She contributes both to the functional coding of the site and to maintaining the documentation that gives the team a shared record of every decision made. Her work ensures that the LITS website isn't just built well, but understood well &mdash; by the current team and by whoever takes over next.
+        </div>
+        <div class="stack-row">
+          <span class="stk">HTML5</span><span class="stk">JavaScript</span><span class="stk">Documentation</span><span class="stk">QA</span>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- end dev-members -->
+</div><!-- end section -->
+
+<!-- LIGHTBOX -->
+<div class="photo-lightbox" id="photoLightbox" onclick="closeLightbox()">
+  <div class="photo-lightbox-inner" onclick="event.stopPropagation()">
+    <button class="photo-close" onclick="closeLightbox()">✕ CLOSE</button>
+    <img id="lightboxImg" src="" alt="">
+    <div class="lightbox-name" id="lightboxName"></div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div>
+      <span class="footer-brand-abbr">LITS</span>
+      <span class="footer-brand-full">LEAGUE OF INFORMATION TECHNOLOGY STUDENTS</span>
+      <p>Igniting innovation and building the next generation of IT leaders.</p>
+      <div class="footer-socials">
+        <a class="soc" href="#">f</a><a class="soc" href="#">𝕏</a>
+        <a class="soc" href="#">ig</a><a class="soc" href="#">in</a>
+        <a class="soc" href="#">gh</a><a class="soc" href="#">dc</a>
+      </div>
+    </div>
+    <div class="footer-col"><h4>NAVIGATION</h4><ul>
+      <li><a href="index.html">Home</a></li><li><a href="events.html">Events</a></li>
+      <li><a href="history.html">History</a></li><li><a href="officers.html">Officers</a></li>
+      <li><a href="partners.html">Partners</a></li><li><a href="contacts.html">Contacts</a></li>
+      <li><a href="about.html">About</a></li><li><a href="developers.html">Developers</a></li>
+    </ul></div>
+    <div class="footer-col"><h4>DEV TEAM</h4><ul>
+      <li>Bacacao, Zhymee P.</li>
+      <li>Dela Cruz, Frank Lenard</li>
+      <li>Santillan, Alyssa Marie</li>
+      <li>Zarsosa, Jaira Marie</li>
+    </ul></div>
+    <div class="footer-col"><h4>CONTACT</h4>
+      <div class="footer-contact-row"><span class="ico">✉</span><span>lits.official@university.edu.ph</span></div>
+      <div class="footer-contact-row"><span class="ico">📍</span><span>IT Building, Room 204</span></div>
+      <div class="footer-contact-row"><span class="ico">⏰</span><span>Mon–Fri, 10AM–5PM</span></div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 <span>LITS — League of IT Students</span>. All rights reserved.</p>
+    <p>Built with <span>♥</span> by the LITS Web Development Team</p>
+  </div>
+</footer>
+
+<script>
+const obs = new IntersectionObserver((entries) => {
+  entries.forEach((e, i) => {
+    if (e.isIntersecting) { setTimeout(() => e.target.classList.add('v'), i * 100); obs.unobserve(e.target); }
+  });
+}, { threshold: 0.06 });
+document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+
+document.getElementById('navToggle').addEventListener('click', () =>
+  document.getElementById('navLinks').classList.toggle('open'));
+
+function openPhoto(src, name) {
+  console.log('Opening photo:', src); // Debug log
+  document.getElementById('lightboxImg').src = src;
+  document.getElementById('lightboxName').textContent = name;
+  document.getElementById('photoLightbox').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeLightbox() {
+  document.getElementById('photoLightbox').classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLightbox(); });
+</script>
+</body>
+</html>
